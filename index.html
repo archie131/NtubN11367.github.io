@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>N1136727_劉佩綺_表格作業</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&family=Sour Gummy&family=Funnel Display&family=Oswald"
+            rel="stylesheet">
+        <style>
+            .logo {
+                background-image: url('img/blackcat.jpg');
+                background-position: 50%;
+                background-repeat: no-repeat;
+            }
+
+            .fontColor {
+                color: yellow;
+            }
+
+            ol>li:hover {
+                background-color: blue;
+                color: yellow;
+            }
+
+            ul>li:hover {
+                background-color: cornflowerblue;
+                color: red;
+            }
+
+            .fontLeftUp {
+                font-family: 'Roboto', sans-serif;
+                background-color: rgb(129, 99, 34);
+                /* 將字體放大 1.2 倍 */
+                font-size: 1.2em;
+                /* 設定為粗體 */
+                font-weight: bold;
+            }
+
+            .fontRightUp {
+                font-family: "Sour Gummy";
+                background-color: rgb(238, 145, 221);
+            }
+
+            .fontLeftDown {
+                font-family: 'Funnel Display';
+                background-color: rgb(91, 184, 237);
+            }
+
+            .fontRightDown {
+                font-family: 'Oswald';
+                background-color: rgb(164, 244, 139);
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <table border="1" width="100%">
+            <tr>
+                <th width="25%">
+                    <img src="img/cat.jpg" alt="logo" width="128" height="64">
+                </th>
+                <th width="25%" colspan="3" class="logo">
+                    <div class="fontColor">我的首頁</div>
+                </th>
+            </tr>
+            <tr>
+                <!--原點項目標籤-->
+                <td width="25%">
+                    <ul>
+                        <li>第1項</li>
+                        <li>第2項</li>
+                        <li>第3項</li>
+                        <li>第4項</li>
+                    </ul>
+                </td>
+                <!-- 羅馬項目標籤 -->
+                <td width="25%">
+                    <ol type="i">
+                        <li>第1項</li>
+                        <li>第2項</li>
+                        <li>第3項</li>
+                        <li>第4項</li>
+                    </ol>
+                </td>
+                <!-- 巢狀項目標籤 -->
+                <td width="25%" colspan="2">
+                    <ol type="a">
+                        <li> 第1項
+                            <ul>
+                                <li>第1-1項</li>
+                                <li>第1-2項</li>
+                            </ul>
+                        </li>
+                        <li> 第2項
+                            <ol>
+                                <li>第2-1項
+                                    <ul>
+                                        <li>第3-1項</li>
+                                        <li>第3-2項</li>
+                                    </ul>
+                                </li>
+                                <li>第2-2項</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td width="25%" class="fontLeftUp">Whereas recognition of the inherent dignity</td>
+                <td width="25%" rowspan="2" colspan="2">
+                    <!-- 表單 -->
+                    <form name="args" action="http://httpbin.org/get" method="GET">
+                        <!-- 名稱 -->
+                        <div>
+                            <label for="username">名稱：</label>
+                            <input id="username" name="username" value="David">
+                        </div>
+                        <!-- 密碼 -->
+                        <div>
+                            <label for="password">密碼：</label>
+                            <input id="password" name="password" type="password">
+                        </div>
+                        <!-- 今天日期 -->
+                        <div>
+                            <label for="today">今天日期：</label>
+                            <input id="today" name="today" type="date">
+                        </div>
+                        <!-- 興趣 -->
+                        <div>
+                            <label>興趣：</label>
+                            <input id="music" name="habbit" type="checkbox" value="music"> <label for="music">音樂</label>
+                            <input id="movie" name="habbit" type="checkbox" value="movie"> <label for="movie">電影</label>
+                            <input id="playball" name="habbit" type="checkbox" value="playball"> <label for="playball">打球</label>
+                            <input id="sleep" name="habbit" type="checkbox" value="sleep"> <label for="sleep">睡覺</label>
+                        </div>
+                        <!-- 清除 -->
+                        <input type="reset">
+                        <!-- 送出 -->
+                        <input type="submit" value="提交">
+                    </form>
+                </td>
+                <td width="25%" class="fontRightUp">Whereas disregard and contempt for human rights have resulted</td>
+            </tr>
+            <tr>
+                <td width="25%" class="fontLeftDown">Whereas recognition of the inherent dignity</td>
+                <td width="25%" class="fontRightDown">Whereas recognition of the inherent dignity</td>
+            </tr>
+            <tr>
+                <td width="25%" colspan="4">我是頁腳</td>
+            </tr>
+        </table>
+    </body>
+
+</html>
