@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>動物園區介紹</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #fdf6e3;
+                color: #073642;
+            }
+
+            header {
+                background-color: #b58900;
+                color: #fdf6e3;
+                padding: 1rem 2rem;
+                text-align: center;
+            }
+
+            nav {
+                display: flex;
+                justify-content: center;
+                background-color: #657b83;
+            }
+
+            nav a {
+                color: #fdf6e3;
+                text-decoration: none;
+                padding: 1rem 2rem;
+                display: block;
+            }
+
+            nav a:hover {
+                background-color: #839496;
+            }
+
+            .section-navigation {
+                display: flex;
+                justify-content: space-around;
+                background-color: #268bd2;
+                padding: 1rem;
+                margin: 1rem 0;
+                border-radius: 10px;
+            }
+
+            .section-navigation a {
+                text-decoration: none;
+                color: #fdf6e3;
+                font-weight: bold;
+                padding: 0.5rem 1rem;
+                background-color: #2aa198;
+                border-radius: 5px;
+            }
+
+            .section-navigation a:hover {
+                background-color: #93a1a1;
+            }
+
+            .zone {
+                padding: 2rem;
+                margin: 1rem auto;
+                background-color: #eee8d5;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                width: 90%;
+                max-width: 1200px;
+            }
+
+            .zone h2 {
+                color: #cb4b16;
+            }
+
+            .zone img {
+                max-width: 100%;
+                border-radius: 10px;
+                margin: 1rem 0;
+            }
+
+            footer {
+                background-color: #073642;
+                color: #fdf6e3;
+                text-align: center;
+                padding: 1rem 0;
+                margin-top: 2rem;
+            }
+
+            .scroll-up {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background-color: #dc322f;
+                color: #fdf6e3;
+                border: none;
+                padding: 0.5rem 1rem;
+                border-radius: 5px;
+                cursor: pointer;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+
+            .scroll-up:hover {
+                background-color: #cb4b16;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>動物園區介紹</h1>
+        </header>
+
+        <nav>
+            <a href="#">回首頁</a>
+            <a href="#">最新消息</a>
+            <a href="#">動物園區介紹</a>
+            <a href="#">聯絡我們</a>
+        </nav>
+
+        <div class="section-navigation">
+            <a href="#africa">非洲草原區</a>
+            <a href="#aquatic">水生動物區</a>
+            <a href="#rainforest">熱帶雨林區</a>
+            <a href="desert">沙漠動物區</a>
+        </div>
+
+        <section id="africa" class="zone">
+            <h2>非洲草原區</h2>
+            <p>歡迎來到非洲草原區，這裡有各式各樣來自非洲草原的動物。</p>
+            <img src="./images/africa.jpg" alt="非洲草原區">
+        </section>
+
+        <section id="aquatic" class="zone">
+            <h2>水生動物區</h2>
+            <p>歡迎來到水生動物區，這裡展示了多樣的水生生物。</p>
+            <img src="./images/aquatic.jpg" alt="水生動物區">
+        </section>
+
+        <section id="rainforest" class="zone">
+            <h2>熱帶雨林區</h2>
+            <p>來到熱帶雨林區，探索神秘的熱帶雨林生態。</p>
+            <img src="./images/rainforest.jpg" alt="熱帶雨林區">
+        </section>
+
+        <section id="desert" class="zone">
+            <h2>沙漠動物區</h2>
+            <p>歡迎來到沙漠動物區，帶您探索那些在極端環境中茁壯成長的奇妙生物！。</p>
+            <img src="./images/desert.jpg" alt="沙漠動物區">
+        </section>
+
+        <button class="scroll-up" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">回到頂部</button>
+
+        <footer>
+            <p>&copy; 動物園網站 | 聯絡我們: contact@example.com</p>
+        </footer>
+    </body>
+</html>

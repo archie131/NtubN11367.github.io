@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>期末作業</title>
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c" rel="stylesheet">
+        <style>
+            body {
+                font-family: "M PLUS Rounded 1c";
+                margin: 0;
+                padding: 0;
+                /* 頁面底側淺綠色 */
+                background-color: #e6ffe6;
+            }
+
+            h1 {
+                font-family: "M PLUS Rounded 1c";
+                background-color: rgb(199, 241, 247);
+                text-align: center;
+                padding: 20px;
+                margin: 0;
+                /* 淡入淡出效果 */
+                animation: fadeInOut 3s infinite;
+            }
+
+            @keyframes fadeInOut {
+                0% {
+                    color: rgba(0, 0, 0, 0);
+                }
+
+                50% {
+                    color: rgba(0, 0, 0, 1);
+                }
+
+                100% {
+                    color: rgba(0, 0, 0, 0);
+                }
+            }
+
+            table {
+                width: 80%;
+                margin: 20px auto;
+                border-collapse: collapse;
+            }
+
+            th {
+                text-align: center;
+                padding: 10px;
+                font-size: 1.5em;
+                background-color: transparent;
+                border: none;
+            }
+
+            td {
+                position: relative;
+                padding: 0;
+                border: none;
+            }
+
+            .image-container {
+                /* 設定父容器為相對定位 */
+                position: relative;
+                /* 保持文字水平置中 */
+                text-align: center;
+            }
+
+            .image-container img {
+                width: 100%;
+                height: auto;
+                display: block;
+                /* 動畫效果 */
+                transition: transform 0.3s ease;
+            }
+
+
+            .image-container:hover img {
+                /* 滑鼠移動時圖片向上移動 */
+                transform: translateY(-10px);
+            }
+
+            .image-container span {
+                /* 絕對定位 */
+                position: absolute;
+                /* 垂直方向置中 */
+                top: 50%;
+                /* 水平方向置中 */
+                left: 50%;
+                /* 使文字居中對齊 */
+                transform: translate(-50%, -50%);
+                /* 背景半透明 */
+                background-color: rgba(255, 255, 255, 0.8);
+                padding: 5px;
+                border-radius: 3px;
+                font-size: 0.9em;
+                color: #333;
+                z-index: 1;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>歡迎來到~北商動物園~</h1>
+
+        <table>
+            <tr>
+                <th colspan="2">點選進入個人頁面</th>
+            </tr>
+            <tr>
+                <td>
+                    <a href="./N1136702/index1.html">
+                        <div class="image-container">
+                            <span>N1136702</span>
+                            <img src="./img1.png" alt="1">
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="./N1136711/index1.html">
+                        <div class="image-container">
+                            <span>N1136711</span>
+                            <img src="./img2.png" alt="2">
+                        </div>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="./N1136727/index1.html">
+                        <div class="image-container">
+                            <span>N1136727</span>
+                            <img src="./img3.png" alt="3">
+                        </div>
+                    </a>
+                </td>
+                <td>
+                    <a href="./N1136740/index1.html">
+                        <div class="image-container">
+                            <span>N1136740</span>
+                            <img src="./img4.png" alt="4">
+                        </div>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </body>
+
+</html>

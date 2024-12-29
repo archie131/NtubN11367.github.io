@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鸚鵡圖鑑介紹</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+        }
+        .banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            position: absolute;
+            animation: slide 15s infinite;
+        }
+        .banner img:nth-child(1) {
+            animation-delay: 0s;
+        }
+        .banner img:nth-child(2) {
+            animation-delay: 4s;
+        }
+        .banner img:nth-child(3) {
+            animation-delay: 8s;
+        }
+        .banner img:nth-child(4) {
+            animation-delay: 12s;
+        }
+
+        @keyframes slide {
+            0% {opacity: 0;}
+            25% {opacity: 1;}
+            50% {opacity: 0;}
+            100% {opacity: 0;}
+        }
+
+        .carousel {
+            margin: 20px auto;
+            max-width: 1200px;
+            position: relative;
+            height: 320px;
+            overflow: hidden;
+        }
+        .carousel-container {
+            display: flex;
+            animation: scroll 20s linear infinite;
+        }
+        .carousel-item {
+            min-width: 200px;
+            flex-shrink: 0;
+        }
+        .carousel-item img {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(calc(-200px * 7));
+            }
+        }
+
+        .carousel-container:hover {
+            animation-play-state: paused;
+        }
+
+        /* Duplicate items for seamless loop */
+        .carousel-container {
+            will-change: transform;
+        }
+        .carousel-container > *:nth-last-child(-n+7) {
+            order: -1;
+        }
+
+        .description {
+            margin: 40px auto;
+            max-width: 800px;
+            text-align: center;
+            padding: 150px;
+            background-color: #111;
+            border-radius: 8px;
+        }
+        .description h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .description p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+<div class="banner">
+    <img src="../media/a1.jpg" alt="Banner 1">
+    <img src="../media/a2.jpg" alt="Banner 2">
+    <img src="../media/a3.jpg" alt="Banner 3">
+</div>
+
+<div class="carousel" id="carousel">
+    <div class="carousel-container">
+        <div class="carousel-item"><img src="../media/s1.jpg" alt="Thumbnail 1"></div>
+        <div class="carousel-item"><img src="../media/s2.jpg" alt="Thumbnail 2"></div>
+        <div class="carousel-item"><img src="../media/s3.jpeg" alt="Thumbnail 3"></div>
+        <div class="carousel-item"><img src="../media/s4.jpg" alt="Thumbnail 4"></div>
+        <div class="carousel-item"><img src="../media/s5.webp" alt="Thumbnail 5"></div>
+        <div class="carousel-item"><img src="../media/s6.jpg" alt="Thumbnail 6"></div>
+        <div class="carousel-item"><img src="../media/s7.jpg" alt="Thumbnail 7"></div>
+        <!-- Duplicate items for smooth scrolling -->
+        <div class="carousel-item"><img src="../media/s1.jpg" alt="Thumbnail 1"></div>
+        <div class="carousel-item"><img src="../media/s2.jpg" alt="Thumbnail 2"></div>
+        <div class="carousel-item"><img src="../media/s3.jpeg" alt="Thumbnail 3"></div>
+        <div class="carousel-item"><img src="../media/s4.jpg" alt="Thumbnail 4"></div>
+        <div class="carousel-item"><img src="../media/s5.webp" alt="Thumbnail 5"></div>
+        <div class="carousel-item"><img src="../media/s6.jpg" alt="Thumbnail 6"></div>
+        <div class="carousel-item"><img src="../media/s7.jpg" alt="Thumbnail 7"></div>
+    </div>
+</div>
+
+<div class="description">
+    <h2>鸚鵡簡介</h2>
+    <p>鸚鵡是一種色彩鮮豔且聰明伶俐的鳥類，廣泛分布於熱帶和亞熱帶地區。牠們屬於鸚形目 (Psittaciformes)，擁有超過 400 個已知物種。<br><br>
+    <p><strong>特點:</strong><br>
+        <ul>
+            <li><strong>外形特徵:</strong> 具有彎曲的喙，利於剝開種子或果殼；四趾型足，兩趾向前、兩趾向後，適合攀爬和抓握；羽毛顏色豔麗。</li>
+            <li><strong>行為與智力:</strong> 鸚鵡以其模仿人類語言和聲音的能力而聞名，擁有極高的社交性，善於解決問題。</li>
+            <li><strong>習性:</strong> 鸚鵡主要以果實、種子、花蜜和昆蟲為食；多為一夫一妻制，壽命可達 50 年以上。</li>
+            <li><strong>飼養:</strong> 鸚鵡是受歡迎的寵物，但飼養牠們需要充足的空間、適當的飲食以及與人類的互動，需承擔長期責任。</li>
+        </ul>
+        <br>
+        <a href="../index1.html">回前一頁</a>
+    </p>
+    
+
+</div>
+</body>
+</html>
