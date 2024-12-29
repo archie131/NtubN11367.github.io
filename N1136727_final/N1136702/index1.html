@@ -1,190 +1,226 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>鸚鵡介紹頁面</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #00324E;
-            color: white;
-        }
-        .banner {
-            text-align: center;
-            background-image: url('banner-image.jpg'); /* Replace with actual banner image */
-            background-size: cover;
-            background-position: center;
-            padding: 100px 20px;
-        }
-        .banner h1 {
-            font-size: 3rem;
-            margin: 0;
-        }
-        .banner p {
-            font-size: 1.2rem;
-        }
-        .section {
-            padding: 40px 20px;
-            text-align: center;
-        }
-        .section h2 {
-            margin-bottom: 20px;
-            font-size: 2rem;
-        }
-        .cards {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-        .card {
-            background-color: #002739;
-            padding: 20px;
-            border-radius: 10px;
-            width: 300px;
-            text-align: left;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-        }
-        .card img {
-            width: 100%;
-            border-radius: 10px;
-        }
-        .card h3 {
-            margin-top: 15px;
-            font-size: 1.2rem;
-        }
-        .dream-factory {
-            background-image: url('dream-factory-bg.jpg'); /* Replace with actual background image */
-            background-size: cover;
-            background-position: center;
-            padding: 40px 20px;
-            color: white;
-            text-align: center;
-        }
-        .dream-factory h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-        .pricing {
-            background-color: #001F2D;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        .pricing-table {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        .pricing-card {
-            background-color: #002739;
-            padding: 20px;
-            border-radius: 10px;
-            width: 200px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
 
-        .pricing-card a {
-            display: block; /* 讓整個卡片都能點擊 */
-            color: inherit; /* 讓鏈接的顏色繼承父元素的顏色 */
-            text-decoration: none; /* 取消下劃線 */
-            height: 100%;
-            width: 100%;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>鸚鵡介紹頁面</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #00324E;
+                color: white;
+            }
 
-        .pricing-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-        }
+            .banner {
+                text-align: center;
+                background-image: url('banner-image.jpg');
+                /* Replace with actual banner image */
+                background-size: cover;
+                background-position: center;
+                padding: 100px 20px;
+            }
 
-        .pricing-card h3 {
-            margin-bottom: 15px;
-        }
+            .banner h1 {
+                font-size: 3rem;
+                margin: 0;
+            }
 
-        .pricing-card ul {
-            list-style: none;
-            padding: 0;
-        }
+            .banner p {
+                font-size: 1.2rem;
+            }
 
-        .pricing-card ul li {
-            margin: 10px 0;
-        }
-    </style>
-</head>
-<body>
-    <!-- 表頭 可以有找片置換 -->
-    <div class="banner">
-        <h1>鸚鵡早點名</h1>
-        <p>我們是可愛的鸚鵡<a href="../N1136702_final/index3.html">鸚鵡影片欣賞</a></p>
-        <p>歡迎來到我們可愛鸚鵡的世界</p>
-    </div>
+            .section {
+                padding: 40px 20px;
+                text-align: center;
+            }
 
-    <!-- 鸚鵡體型分類 -->
-    <div class="section">
-        <h2>關於鸚鵡的體型</h2>
-        <div class="cards">
-            <div class="card">
-                <img src="../media/s.jpg" alt="小型鸚鵡">
-                <h3>我是小型鸚鵡虎皮</h3>
-                <p>我小巧可愛 </p>
-            </div>
-            <div class="card">
-                <img src="../media/ms.jpg" alt="中小型鸚鵡">
-                <h3>我是中小型鸚鵡玄鳳</h3>
-                <p>我有可愛的小腮紅 我敲級可愛</p>
-            </div>
-            <div class="card">
-                <img src="../media/m.jpg" alt="中型鸚鵡">
-                <h3>我是中型灰鸚鵡</h3>
-                <p>我喜歡模仿你們說話 不要跟我說祕密,我都會說出來喔</p>
-            </div>
-            <div class="card">
-                <img src="../media/L.jfif" alt="大型鸚鵡">
-                <h3>偶素大型金剛鸚鵡</h3>
-                <p>不要為了我的美麗所傾倒 偶會受不鳥</p>
+            .section h2 {
+                margin-bottom: 20px;
+                font-size: 2rem;
+            }
+
+            .cards {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            .card {
+                background-color: #002739;
+                padding: 20px;
+                border-radius: 10px;
+                width: 300px;
+                text-align: left;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .card:hover {
+                transform: scale(1.05);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            }
+
+            .card img {
+                width: 100%;
+                border-radius: 10px;
+            }
+
+            .card h3 {
+                margin-top: 15px;
+                font-size: 1.2rem;
+            }
+
+            .dream-factory {
+                background-image: url('dream-factory-bg.jpg');
+                /* Replace with actual background image */
+                background-size: cover;
+                background-position: center;
+                padding: 40px 20px;
+                color: white;
+                text-align: center;
+            }
+
+            .dream-factory h2 {
+                font-size: 2rem;
+                margin-bottom: 20px;
+            }
+
+            .pricing {
+                background-color: #001F2D;
+                padding: 40px 20px;
+                text-align: center;
+            }
+
+            .pricing-table {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            .pricing-card {
+                background-color: #002739;
+                padding: 20px;
+                border-radius: 10px;
+                width: 200px;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .pricing-card a {
+                display: block;
+                /* 讓整個卡片都能點擊 */
+                color: inherit;
+                /* 讓鏈接的顏色繼承父元素的顏色 */
+                text-decoration: none;
+                /* 取消下劃線 */
+                height: 100%;
+                width: 100%;
+            }
+
+            .pricing-card:hover {
+                transform: scale(1.05);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            }
+
+            .pricing-card h3 {
+                margin-bottom: 15px;
+            }
+
+            .pricing-card ul {
+                list-style: none;
+                padding: 0;
+            }
+
+            .pricing-card ul li {
+                margin: 10px 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- 表頭 可以有找片置換 -->
+        <div class="banner">
+            <h1>鸚鵡早點名</h1>
+            <p>我們是可愛的鸚鵡<a href="././index3.html">鸚鵡影片欣賞</a></p>
+            <p>歡迎來到我們可愛鸚鵡的世界</p>
+        </div>
+
+        <!-- 鸚鵡體型分類 -->
+        <div class="section">
+            <h2>關於鸚鵡的體型</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="././media/s.jpg" alt="小型鸚鵡">
+                    <h3>我是小型鸚鵡虎皮</h3>
+                    <p>我小巧可愛 </p>
+                </div>
+                <div class="card">
+                    <img src="././media/ms.jpg" alt="中小型鸚鵡">
+                    <h3>我是中小型鸚鵡玄鳳</h3>
+                    <p>我有可愛的小腮紅 我敲級可愛</p>
+                </div>
+                <div class="card">
+                    <img src="././media/m.jpg" alt="中型鸚鵡">
+                    <h3>我是中型灰鸚鵡</h3>
+                    <p>我喜歡模仿你們說話 不要跟我說祕密,我都會說出來喔</p>
+                </div>
+                <div class="card">
+                    <img src="././media/L.jfif" alt="大型鸚鵡">
+                    <h3>偶素大型金剛鸚鵡</h3>
+                    <p>不要為了我的美麗所傾倒 偶會受不鳥</p>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- 鸚鵡解析 -->
-    <div class="pricing">
-        <h2>想知道更多的鸚鵡內容嗎?</h2>
-        <div class="pricing-table">
-            <div class="pricing-card">                
-                <h3><a href="../index2.html">小型鸚鵡看這裡</a></h3>
-                <ul>
-                    <li>體長約10-25公分</li>
-                    <li>體重約30-70公克</li>                    
-                </ul>
+        <!-- 鸚鵡解析 -->
+        <div class="pricing">
+            <h2>想知道更多的鸚鵡內容嗎?</h2>
+            <div class="pricing-table">
+                <div class="pricing-card">
+                    <a href="././index2.html">
+                        <h3>小型鸚鵡看這裡</h3>
+                        <ul>
+                            <li>體長約10-25公分</li>
+                            <li>體重約30-70公克</li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="pricing-card">
+                    <a href="././index2.html">
+                        <h3>中小型鸚鵡看這裡</h3>
+                        <ul>
+                            <li>體長約20-30公分</li>
+                            <li>體重約70-150公克</li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="pricing-card">
+                    <a href="././index2.html">
+                        <h3>中型鸚鵡看這裡</h3>
+                        <ul>
+                            <li>體長約30-40公分</li>
+                            <li>體重約150-400公克</li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="pricing-card">
+                    <a href="././index2.html">
+                        <h3>大型鸚鵡看這裡</h3>
+                        <ul>
+                            <li>體長約40-100公分</li>
+                            <li>體重約在400-1500公克</li>
+                        </ul>
+                    </a>
+                </div>
             </div>
-            <div class="pricing-card">                
-                <h3><a href="../index2.html">中小型鸚鵡看這裡</a></h3>
-                <ul>
-                    <li>體長約20-30公分</li>
-                    <li>體重約70-150公克</li>
-                </ul>
-            </div>
-            <div class="pricing-card">                
-                <h3><a href="../index2.html">中型鸚鵡看這裡</a></h3>
-                <ul>
-                    <li>體長約30-40公分</li>
-                    <li>體重約150-400公克</li>
-                </ul>
-            </div>
-            <div class="pricing-card">
-                <h3><a href="../index2.html">大型鸚鵡看這裡</a></h3>
-                <ul>
-                    <li>體長約40-100公分</li>
-                    <li>體重約在400-1500公克</li>
-                </ul>
-            </div>
+
+            <br>
+            <a href="../index.html">回北商動物園首頁</a>
+            
         </div>
-    </div>
-</body>
+
+    </body>
+
 </html>
