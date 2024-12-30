@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>獅子介紹</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                min-height: 100vh;
+                background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('./lion4.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+
+            .header-info {
+                text-align: center;
+                background-color: #dee63d99;
+                color: #3a3939;
+                padding: 10px;
+                font-size: 32px;
+                font-weight: bold;
+                border-bottom: 0px solid #fdfefd;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            .image-row {
+                display: flex;
+                justify-content: center;
+                gap: 300px;
+                margin: 100px auto;
+                max-width: 1000px;
+            }
+
+            .image-item {
+                text-align: center;
+            }
+
+            .image-item img {
+                width: 500px;
+                border: 20px solid #045f33;
+                border-radius: 8px;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .image-item img:hover {
+                transform: scale(1.1);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+                border-color: #ec8135;
+            }
+
+            .image-item p {
+                margin-top: 10px;
+                font-size: 32px;
+                color: #3a3939;
+                background-color: #e19e2199;
+                padding: 10px;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            .image-item .button-row {
+                margin-top: 10px;
+                display: flex;
+                justify-content: center;
+            }
+
+            .button-row {
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+                margin: 20px auto;
+            }
+
+            .button-row button {
+                padding: 10px 20px;
+                font-size: 16px;
+                color: #555;
+                background-color: white;
+                border: 2px solid #555;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: transform 0.3s, background-color 0.3s;
+            }
+
+            .button-row button:hover {
+                transform: scale(1.2);
+                background-color: #f0f0f0;
+            }
+
+            .footer-buttons {
+                position: fixed;
+                bottom: 40px;
+                width: calc(100% - 40px);
+                display: flex;
+                justify-content: space-between;
+                padding: 0 20px;
+            }
+
+            .footer-buttons a {
+                text-decoration: none;
+                padding: 20px 40px;
+                font-size: 20px;
+                background-color: #555;
+                color: white;
+                border-radius: 8px;
+                font-weight: bold;
+                transition: transform 0.3s;
+            }
+
+            .footer-buttons a:hover {
+                background-color: #333;
+                transform: scale(1.1);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="header-info">
+            <p>
+                小知識: 獅子是母系社會，以雌性為主的群體，雌性終其一生不會離開獅群，但雄獅可能會因為年齡或是受到外來雄獅挑戰而離開群體!
+            </p>
+        </div>
+
+        <div class="image-row">
+            <div class="image-item">
+                <img src="./media2/lion.jpg" alt="lion">
+                <h1>
+                    <p>
+                        西非獅（P.l.senegalensis）又稱作塞內加爾獅，雄性獅子普遍只長有較小的鬃毛，族群分佈450-1300分佈在西非，大約有550-1550分佈在非洲中部，雄性體重約140～196公斤，雌性體重約80～150公斤。
+                    </p>
+                </h1>
+                <div class="button-row">
+                    <a href="https://www.youtube.com/watch?v=Mm3jclrWClY" target="_blank">
+                        <button>觀賞影片</button>
+                    </a>
+                </div>
+            </div>
+            <div class="image-item">
+                <img src="./media2/lion2.jpg" alt="lion2">
+                <h1>
+                    <p>
+                        東非獅（P.l.nubica）又稱馬賽獅，是最常見的獅子亞種，雄性體重145～250公斤，雌性體重90～182公斤，較聞名的是雄獅鬃毛類型的範圍很大，有的鬃毛非常濃密或非常稀小，甚至完全沒有鬃毛。
+                    </p>
+                </h1>
+                <div class="button-row">
+                    <a href="https://www.youtube.com/watch?v=x3Tncdx1ajY" target="_blank">
+                        <button>觀賞影片</button>
+                    </a>
+                </div>
+            </div>
+            <div class="image-item">
+                <img src="./media2/lion3.jpg" alt="lion3">
+                <h1>
+                    <p>
+                        亞洲獅（P. l. persica）是所有獅子亞種中是體型較小的一種，曾一度降低到只有20頭，現在又恢復到了300頭。雄性一般是160-190公斤，而雌性平均體重約115公斤。
+                    </p>
+                </h1>
+                <div class="button-row">
+                    <a href="https://www.youtube.com/watch?v=Vg60RdE3Ftw" target="_blank">
+                        <button>觀賞影片</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-buttons">
+            <a href="./index1.html">回首頁
+            </a>
+            <a href="./index3.html">找老虎
+            </a>
+        </div>
+    </body>
+
+</html>
