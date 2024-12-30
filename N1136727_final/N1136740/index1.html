@@ -1,126 +1,129 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>動物園網站</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f7f7f7;
-            color: #333;
-        }
 
-        header {
-            background-color: #4c6baf;
-            color: white;
-            padding: 1rem 2rem;
-            text-align: center;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>動物園網站</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f7f7f7;
+                color: #333;
+            }
 
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #333;
-        }
+            header {
+                background-color: #4c6baf;
+                color: white;
+                padding: 1rem 2rem;
+                text-align: center;
+            }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 1rem 2rem;
-            display: block;
-        }
+            nav {
+                display: flex;
+                justify-content: center;
+                background-color: #333;
+            }
 
-        nav a:hover {
-            background-color: #575757;
-        }
+            nav a {
+                color: white;
+                text-decoration: none;
+                padding: 1rem 2rem;
+                display: block;
+            }
 
-        .banner {
-            text-align: center;
-            margin: 2rem 0;
-        }
+            nav a:hover {
+                background-color: #575757;
+            }
 
-        .banner img {
-            max-width: 80%;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
+            .banner {
+                text-align: center;
+                margin: 2rem 0;
+            }
 
-        .featured-animals {
-            display: flex;
-            justify-content: space-around;
-            padding: 2rem;
-            gap: 1rem;
-        }
+            .banner img {
+                max-width: 80%;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
 
-        .animal-card {
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            padding: 1rem;
-            text-align: center;
-            width: 30%;
-            background-color: white;
-        }
+            .featured-animals {
+                display: flex;
+                justify-content: space-around;
+                padding: 2rem;
+                gap: 1rem;
+            }
 
-        .animal-card img {
-            width: 100%;
-            border-radius: 10px;
-            margin-bottom: 1rem;
-        }
+            .animal-card {
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                padding: 1rem;
+                text-align: center;
+                width: 30%;
+                background-color: white;
+            }
 
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>歡迎來到動物園網站!</h1>
-    </header>
+            .animal-card img {
+                width: 100%;
+                border-radius: 10px;
+                margin-bottom: 1rem;
+            }
 
-    <nav>
-        <a href="../index.html">回北商動物園首頁</a>
-        <a href="#">首頁</a>
-        <a href="#">最新消息</a>
-        <a href="./index2.html">園區介紹</a>
-        <a href="./index3.html">認識水豚</a>
-        <a href="#">聯絡我們</a>
-    </nav>
+            footer {
+                background-color: #333;
+                color: white;
+                text-align: center;
+                padding: 1rem 0;
+                margin-top: 2rem;
+            }
+        </style>
+    </head>
 
-    <div class="banner">
-        <img src="./images/banner.jpg" alt="動物園圖片">
-    </div>
+    <body>
+        <header>
+            <h1>歡迎來到動物園網站!</h1>
+        </header>
 
-    <section class="featured-animals">
-        <div class="animal-card">
-            <img src="./images/animal1.jpg" alt="動物一">
-            <h2>松鼠</h2>
-            <p>
-                松鼠是一種小型哺乳類動物，擅長在樹木之間跳躍，喜歡以堅果和種子為主食，擁有濃密的尾巴，能在寒冷的天氣下保暖。                
-            </p>
+        <nav>
+            <a href="../index.html">回北商動物園首頁</a>
+            <a href="#">首頁</a>
+            <a href="#">最新消息</a>
+            <a href="./index2.html">園區介紹</a>
+            <a href="./index3.html">認識水豚</a>
+            <a href="#">聯絡我們</a>
+        </nav>
+
+        <div class="banner">
+            <img src="./images/banner.jpg" alt="動物園圖片">
         </div>
-        <div class="animal-card">
-            <img src="./images/animal2.jpg" alt="動物二">
-            <h2>海豚</h2>
-            <p>
-                海豚是一種高度聰明的海洋哺乳類動物，擁有流線型的身體，善於游泳和跳躍，經常成群活動，並以魚類為主要食物來源。                
-            </p>
-        </div>
-        <div class="animal-card">
-            <img src="./images/animal3.jpg" alt="動物三">
-            <h2>熊貓</h2>
-            <p>熊貓是一種溫和的雜食性動物，主要以竹子為食，擁有圓滾滾的體型和黑白相間的毛皮，牠們原產於中國的山區，被譽為國寶，象徵和平與保育精神。</p>
-        </div>
-    </section>
 
-    <footer>
-        <p>&copy; 動物園網站 | 聯絡我們: contact@example.com</p>
-    </footer>
-</body>
+        <section class="featured-animals">
+            <div class="animal-card">
+                <img src="./images/animal1.jpg" alt="動物一">
+                <h2>松鼠</h2>
+                <p>
+                    松鼠是一種小型哺乳類動物，擅長在樹木之間跳躍，喜歡以堅果和種子為主食，擁有濃密的尾巴，能在寒冷的天氣下保暖。
+                </p>
+            </div>
+            <div class="animal-card">
+                <img src="./images/animal2.jpg" alt="動物二">
+                <h2>海豚</h2>
+                <p>
+                    海豚是一種高度聰明的海洋哺乳類動物，擁有流線型的身體，善於游泳和跳躍，經常成群活動，並以魚類為主要食物來源。
+                </p>
+            </div>
+            <div class="animal-card">
+                <img src="./images/animal3.jpg" alt="動物三">
+                <h2>熊貓</h2>
+                <p>熊貓是一種溫和的雜食性動物，主要以竹子為食，擁有圓滾滾的體型和黑白相間的毛皮，牠們原產於中國的山區，被譽為國寶，象徵和平與保育精神。</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 動物園網站 | 聯絡我們: contact@example.com</p>
+        </footer>
+    </body>
+
 </html>
